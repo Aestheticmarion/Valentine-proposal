@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(love\ 4.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.card {
+    position: relative;
+    width: 360px;
+    height: 520px;
+    border-radius: 25px;
+    overflow:hidden ;
+    
+    /* 🔥 Background image */
+    background-image: url("Peace.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+
+.card img{
+    width: 80%;
+    display: block;
+}
+
+overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    align-items: center;
+
+    /* Center Everything */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 40px;
+    color: blanchedalmond;
+    margin-bottom: 5px;
+    font-style: italic;
+    align-items: center;
+}
+
+.overlay h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: blanchedalmond;
+}
+
+.overlay p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: blanchedalmond;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 22px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.yes {
+    background: #ff4b5c;
+    color: white;
+}
+
+.no {
+    background: white;
+    color: #ff4b5c;
+}
+
+/* Floating hearts */
+.hearts::before {
+    content: "❤ 💕 💖 💗 💓 LOVE YOU";
+    color: antiquewhite;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    animation: float 10s linear infinite;
+    font-size: 155px;
+    opacity: 0.4;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

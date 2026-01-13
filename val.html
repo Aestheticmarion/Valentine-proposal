@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Valentine Proposal ❤ </title>
+    <link rel="stylesheet" href="val.css">
+</head>
+<body>
+   
+
+    <div class="hearts"></div>
+        <div class="card">
+            <div class="overlay">
+                <h1>Peace 💖</h1>
+                <h2>Will you be my Valentine?</h2>
+               <p>You literally bring joy and peace into my life and always tend to make me happy </p>
+                <div class="buttons">
+                   <button class="yes" onclick="yesAnswer()">Yesss 💖</button>
+                   <button class="no" onmouseover="moveButton(this)">Nooo 😭</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    <script>
+    function yesAnswer() {
+        alert("Yayyy I knew you'd say yes 💖");
+    }
+    function moveButton(btn) {
+    btn.style.position = "absolute";
+    btn.style.left = Math.random() * 80 + "%";
+    btn.style.top = Math.random() * 80 + "%";
+    }
+</script>
+</body>
+</html>
